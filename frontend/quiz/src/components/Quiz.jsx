@@ -6,7 +6,6 @@ import ViewInfo from './ViewInfo';
 import ScoreDisplay from './ScoreDisplay';
 import { useNavigate } from "react-router";
 import Loading from './Loading';
-import Timer from './Timer';
 
 const Quiz = () => {
 
@@ -131,7 +130,7 @@ const Quiz = () => {
                                 <h6>Correct Answer Marks : {quizInfo.correct_answer_marks}</h6>
                                 <h6>Negative Marks : {quizInfo.negative_marks}</h6>
                             </div>
-                            <Timer minutes={minutes} setMinutes={setMinutes} seconds={seconds} setSeconds={setSeconds}submit={submit} />
+                            <h5>Duration : {quizInfo.duration} minutes</h5>
                         </div>
                     </>
             }
