@@ -32,7 +32,7 @@ const Quiz = () => {
             sessionStorage.clear();
 
             const fresp = async () => {
-                let fetchRes = await fetch('http://localhost:8080/quiz');
+                let fetchRes = await fetch('https://quiz-9h7x.onrender.com/quiz');
                 let data = await fetchRes.json();
 
                 setShowLoading(false);

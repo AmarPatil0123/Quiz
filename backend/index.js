@@ -3,7 +3,7 @@ const app = express();
 import cors from 'cors';
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://quizapp-4fgo.onrender.com',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     optionsSuccessStatus: 200,
