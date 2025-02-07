@@ -99,6 +99,13 @@ const Quiz = () => {
                 return;
             }
         }
+
+        setShowLoading(true);
+
+        setTimeout(() => {
+            setShowLoading(false);
+        }, 2000);
+
         
         let userScore = calculateScore();
         setUserScore(userScore);
